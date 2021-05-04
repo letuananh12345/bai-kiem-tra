@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function demSoNguyenAm(arrays) {
+        var soNguyenAm = ['a', 'o', 'e', 'u', 'i'];
+        var count = 0;
+
+    for(let j=0; j<soNguyenAm.length; j++){
+        for(let i=0; i<arrays.length; i++){
+            if(soNguyenAm[j] === arrays[i]){
+                count++;
+            }
+        }
+    }
+    return count ;
+    }
+
+    var count = demSoNguyenAm(['a','h','k','l','i']);
+    document.write("số ký tự nguyên âm trong chuỗi là: " + count);
+</script>
+</body>
+</html>

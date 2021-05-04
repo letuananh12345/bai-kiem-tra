@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="bai-2.js"></script>
+<script>
+    let array = []
+    let lengthArr = +prompt("Nhập độ dài của mảng: ");
+    for (let i=0;i<lengthArr;i++) {
+        array.push(Math.round(Math.random()*100));
+    }
+    let num =+prompt("Nhập số cần tìm: ");
+    let results = elvenInArr(num,array);
+    document.write(results);
+</script>
+</body>
+</html>
